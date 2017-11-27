@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Exercise 1 </title>
+<title>Exercise_set_1 </title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11872,7 +11872,7 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For descrete variables the proof is similar, we just need to use sums, not integrals</p>
+<p>For discrete variables the proof is similar, we just need to use sums, not integrals</p>
 
 </div>
 </div>
@@ -11893,7 +11893,7 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>1) We can use product rule. $$P(F=Apple)= P(F=Apple|Box= 1) \cdot (Box = 1)+P(F=Apple|Box = 0) \cdot (Box = 0)= \frac{8}{12}\cdot\frac{1}{2}+\frac{15}{18}\cdot\frac{1}{2}=0.75$$
 2) $$P(B = 1|F=A) = \frac{ P(F= A|B = 1) \cdot (B= 1)}{P(F=A)}= \frac{4}{9}$$
-3) We don't know what the box is but we do know the probability of the box to be the first box or the second (we've just culculated them in 2). So we can once more use product rule to find the probability that the second fruit is an apple. $$P(F2=A|F=A)= P(F2=A|B= 1) \cdot (B= 1|F=A)+  P(F2=A|B = 0)  \cdot (B = 0|F=A) = \frac{8}{12}\cdot\frac{4}{9}+\frac{15}{18}\cdot(1-\frac{4}{9})= 0.759$$</p>
+3) We don't know what the box is but we do know the probability of the box to be the first box or the second (we've just calculated them in 2). So we can once more use the product rule to find the probability that the second fruit is an apple. $$P(F2=A|F=A)= P(F2=A|B= 1) \cdot (B= 1|F=A)+  P(F2=A|B = 0)  \cdot (B = 0|F=A) = \frac{8}{12}\cdot\frac{4}{9}+\frac{15}{18}\cdot(1-\frac{4}{9})= 0.759$$</p>
 
 </div>
 </div>
@@ -12025,7 +12025,7 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c">%%latex </span>
@@ -12105,7 +12105,7 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It is well known <a href="https://en.wikipedia.org/wiki/Boy_or_Girl_paradox">Boy or Girl "paradox"</a>. Read part "Analysis of the ambiguity" to understand the difference between first that second situation.</p>
+<p>It is well-known <a href="https://en.wikipedia.org/wiki/Boy_or_Girl_paradox">Boy or Girl "paradox"</a>. Read part "Analysis of the ambiguity" to understand the difference between first that second situation.</p>
 <blockquote><p>Thus, if it is assumed that <strong>both children were considered while looking for a boy</strong>, the answer is 
 <strong>$\frac{1}{3}$</strong>. However, if the family was first selected and then <strong>a random, true statement was made about the gender of one child</strong> in that family, whether or not both were considered, the correct way to calculate the conditional probability is not to count all of the cases that include a child with that gender. Instead, one must consider only the probabilities where the statement will be made in each case. In this case the answer is <strong>$\frac{1}{2}$</strong>.</p>
 </blockquote>
@@ -12124,7 +12124,7 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c">%%latex </span>
