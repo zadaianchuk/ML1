@@ -12105,10 +12105,45 @@ cov(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]=\mathbb{E}[XY]-\mathbb{E}[
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It is well-known <a href="https://en.wikipedia.org/wiki/Boy_or_Girl_paradox">Boy or Girl "paradox"</a>. Read part "Analysis of the ambiguity" to understand the difference between first that second situation.</p>
+<p>1) <strong>Intuitive solution:</strong></p>
+<p>Before we made the question the sample space was:
+$$\Omega = \{BB, GG, BG, GB\}.$$</p>
+<p>Where, $B$ represent a boy and $G$ represent a girl. For instance, $BG$ represent
+the event where the first child is a boy and the second child is a girl.
+When the neighbor answer our question affirmatively, he is saying that he
+has at least one boy. So, the new sample space is composed by:</p>
+$$\Omega = \{BB, BG, GB\}.$$<p>Thus, eliminating the event where there were two girls. Therefore, the prob-
+ability of having a girl is:
+$$\frac{| \{BG, GB\}|}{|\Omega|}=\frac{2}{3}$$</p>
+<p><strong>Formal solution:</strong></p>
+<p>Random variables</p>
+<ul>
+<li>$B$ - number of boys </li>
+<li>$G$ - number of girls </li>
+</ul>
+<p>The neighbor tell us that $B \ge 1$</p>
+$$P(G = 1|B \ge 1) = \frac{P(G = 1, B \ge 1)}{P(B \ge 1)} = \frac{\frac{2}{4}}{\frac{3}{4}}=\frac{2}{3}$$<p>2) <strong>Intuitive solution:</strong></p>
+<p>Knowing the sex of one kid has no influence whatsoever on the sex of the
+other kid. So, there is a 50 % chance of the other child being a girl.</p>
+<p><strong>Formal solution:</strong></p>
+<p>Events</p>
+<ul>
+<li>$S$ - sex of the known child</li>
+<li>$T$ - sex of the unknown child
+$$P(T = G|S = B) = \frac{P(T = G, S = B)}{
+P(S = B)}
+= P(T = G) = \frac{1}{
+2}$$</li>
+</ul>
+<p>The question is similar to the well-known <a href="https://en.wikipedia.org/wiki/Boy_or_Girl_paradox">Boy or Girl "paradox"</a>. Read part "Analysis of the ambiguity" to understand the difference between first that second situation. Note that there the question in paradox was oppsite to the question in exercise e.g. "What is the probability that both children are boys?"</p>
 <blockquote><p>Thus, if it is assumed that <strong>both children were considered while looking for a boy</strong>, the answer is 
 <strong>$\frac{1}{3}$</strong>. However, if the family was first selected and then <strong>a random, true statement was made about the gender of one child</strong> in that family, whether or not both were considered, the correct way to calculate the conditional probability is not to count all of the cases that include a child with that gender. Instead, one must consider only the probabilities where the statement will be made in each case. In this case the answer is <strong>$\frac{1}{2}$</strong>.</p>
 </blockquote>
+<p><strong>Conclusion</strong></p>
+<p>As suspected, the two questions had different answers despite being similar. The lesson here is to not confuse semantically close statements in the english
+language with close answers in the probabilistic framework. Be sure to always
+translate the information and the question into the probabilistic framework
+before jumping into any conclusion.</p>
 
 </div>
 </div>
