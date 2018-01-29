@@ -11818,7 +11818,7 @@ $$ \mathbb{E}_{p(\mu |N, m) }[\mu] = \frac{\alpha + \beta}{\alpha + \beta + N} \
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From multivariate Gaussian:</p>
 $$ p(\mathbf{x}) = \frac{1}{\sqrt{(2 \pi)^2 \det{(\Sigma)}}} \exp\left(-\frac{1}{2} (\mathbf{x} - \mathbf{\mu})^{T} \Sigma^{-1} (\mathbf{x} - \mathbf{\mu}) \right) $$<p>For bivariate Gaussian: 
-$$\mathbf{x}=\begin{bmatrix}
+$$ \mathbf{x}=\begin{bmatrix}
     x_1 \ x_2 \
 \end{bmatrix}, \quad \mathbf{\mu}=\begin{bmatrix}
     \mu_1 \ 
@@ -11904,7 +11904,7 @@ $$\sigma_{post}^2=\left(\frac{N_1}{\sigma_1^2}+\frac{N_2}{\sigma_2^2}\right)^{-1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="E5.">E5.<a class="anchor-link" href="#E5.">&#182;</a></h4><p>As we had uninformative prior in previous task, the $mu$ that maximize posterior distribution will also maximize our likelihood, so<br>
+<h4 id="E5.">E5.<a class="anchor-link" href="#E5.">&#182;</a></h4><p>As we had uninformative prior in previous task, the $\mu$ that maximize posterior distribution will also maximize our likelihood, so<br>
 $$\mu_{ML}= \mu_{post} = \left({N_1}\lambda_1 +{N_2}\lambda_2 \right)^{-1} \left(\lambda_1\sum_{i = 1}^{N_1} y_i^{(1)} + \lambda_2\sum_{j_1}^{N_2} y_j^{(2)}\right)$$
 Let's write down log likelihood
 \begin{equation}
@@ -12057,7 +12057,7 @@ $$w_0 = \frac{1}{N}\left(\sum_{n=1}^{N}\mathbf{t_n}- \mathbf{w}^{T}\mathbf{\phi}
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 \begin{equation}
-\frac{\partial LL}{\partial \mathbf{w}}= 0 = \sum_{n = 1}^N \phi_n (\mathbf{t_n} - w_0 - w^T \mathbf{\phi}(\mathbf{x_n}))
+\frac{\partial LL}{\partial \mathbf{w}}= 0 = \sum_{n = 1}^N (\phi_n -\bar{\phi} ) (\mathbf{t_n} -\mathbf{\bar{t}}  - \mathbf{w}^T (\mathbf{\phi}(\mathbf{x_n})-\bar{\phi}))
 \end{equation}<p>Using the best solution for $w_0$
 \begin{equation}
 0 = \Phi^T \mathbf{t} - \Phi^T \bar{\mathbf{t}} + \Phi^T \bar{\Phi} \mathbf{w}  - \Phi^T \Phi \mathbf{w}
@@ -12067,6 +12067,19 @@ $$\mathbf{w}=(\Phi_c^T \Phi_c)^{-1} \Phi_c^T \mathbf{t_c}$$</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
